@@ -268,3 +268,6 @@ ALTER TABLE Recipe_Content ALTER INDEX idx_recipe_ingredient2 INVISIBLE;
 
 
 CREATE INDEX idx_recipe_ingredient3 ON Ingredient(Ingredient_ID);
+
+
+CREATE INDEX idx_recipe_content ON Recipe_Content(Recipe_ID, Ingredient_ID);
